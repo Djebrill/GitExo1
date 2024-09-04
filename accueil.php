@@ -7,12 +7,13 @@
 </head>
 <body>
     <?php
-    // Récupération des données du formulaire
-    $prenom = htmlspecialchars($_POST['prenom']);
-    $nom = htmlspecialchars($_POST['nom']);
+    if (isset($_POST['prenom']) && isset($_POST['nom'])) {
+        $prenom = ($_POST['prenom']);
+        $nom = ($_POST['nom']);
 
-    // Affichage du message de bienvenue
-    echo "<h1>Bonjour $prenom $nom !</h1>";
+        echo "<h1>Bonjour $prenom $nom !</h1>";
+    } else {
+        echo "<h1>Erreur : Les données n'ont pas été envoyées correctement.</h1>";
+    }
     ?>
-</body>
-</html>
+
