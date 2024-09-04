@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="GitBash" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="GitBash">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/Badereddine/GitBash/" local="$PROJECT_DIR$" web="/Badereddine/GitBash/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
