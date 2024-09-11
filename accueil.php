@@ -7,13 +7,10 @@
 </head>
 <body>
     <?php
-    if (isset($_POST['prenom']) && isset($_POST['nom'])) {
-        $prenom = ($_POST['prenom']);
-        $nom = ($_POST['nom']);
-
-        echo "<h1>Bonjour $prenom $nom !</h1>";
+    if (($_POST['login'] == "admin") && ($_POST['mdp'] == "azerty")){
+        echo "<h1>Bienvenue</h1>";
     } else {
-        echo "<h1>Erreur : Les données n'ont pas été envoyées correctement.</h1>";
+        echo "<h1>Erreur : Mot de passe incorrecte</h1>";
     }
     ?>
 
